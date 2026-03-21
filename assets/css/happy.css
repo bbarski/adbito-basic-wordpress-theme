@@ -1,0 +1,26 @@
+/* Override Colors Using CSS Variables */
+:root {
+    --primary-color: #e0e0d1;
+    --secondary-background-color: #f4e4e4;
+    --background-color: #d6c7c7;
+    --text-color: #4f4f4f;
+}
+
+/* Apply Variables to Existing Theme Elements */
+body {
+    background-color: var(--secondary-background-color);
+}
+
+main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+}

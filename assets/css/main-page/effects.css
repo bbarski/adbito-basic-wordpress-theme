@@ -1,0 +1,67 @@
+/* Other styles as needed */
+
+.scroll-down-indicator {
+      position: absolute; /* Keeps the indicator fixed in place */
+      top: 60%;
+	  left: 90%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 2rem; /* Arrow size */
+      color: #FFD700;
+      animation: jump 1.5s infinite ease-in-out;
+      cursor: pointer;
+	  z-index: 2; /* Places overlay above the background */
+    }
+
+    .scroll-down-indicator::before {
+      content: '▼'; /* Down arrow symbol */
+      display: block;
+    }
+
+    @keyframes jump {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+
+/* Scroll Down Indicator */
+.scroll-down-indicator {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #a3a3a3;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+
+.divider {
+  height: 3px; /* Thickness of the divider */
+  background: linear-gradient(to right, #654321, #d4af37, #654321); /* Metallic gradient */
+  border-radius: 5px; /* Smooth edges */
+  width: 80%; /* Adjust the width to fit your design */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+/* * SECTIONS LAZY LOADING START * */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    border-radius: 10px;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* * SECTIONS LAZY LOADING END * */

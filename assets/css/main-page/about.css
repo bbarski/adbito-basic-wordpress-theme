@@ -1,0 +1,47 @@
+.about-us-container {
+    width: 100%;
+}
+
+.about-us-content {
+    display: block;
+}
+
+.about-us-image {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 45%;
+}
+
+.about-us-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-us-text {
+    font-size: 1.1rem;
+}
+
+.image-right .about-us-image {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .about-us-image {
+        float: none;
+        margin: 0 auto 20px auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-us-text {
+        width: 100%;
+    }
+}

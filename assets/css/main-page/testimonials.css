@@ -1,0 +1,154 @@
+.testimonials-section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+}
+
+.testimonials-container{
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+box-sizing: border-box;
+}
+
+.testimonials-slider {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+position: relative;
+max-width: 600px;
+width: 100%;
+margin: auto;
+overflow: hidden;
+}
+
+/* Slides Container */
+.slides {
+display: flex;
+width: 100%;
+animation: slide-animation 30s infinite;
+align-items: stretch; /* Ensure all slides stretch to the tallest one */
+}
+
+/* Individual Testimonial Slide */
+.testimonial-slide {
+flex: 0 0 100%;
+text-align: center;
+background-color: #dcdcdc; /* Hasboro Grey */
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column; /* Ensures text stretches slide */
+justify-content: center;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+/* Testimonial Photo */
+.testimonial-photo img {
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 15px;
+border: 2px solid #a3a3a3;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+font-style: italic;
+color: #333;
+flex-grow: 1; /* Expands to fill space */
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px; /* Space below the text */
+}
+
+/* Testimonial Name */
+.testimonial-name {
+font-weight: bold;
+margin-top: 10px;
+color: #555;
+}
+
+/* Adjusted Slide Animation */
+@keyframes slide-animation {
+0%, 25% { transform: translateX(0); }
+26%, 50% { transform: translateX(-100%); }
+51%, 75% { transform: translateX(-200%); }
+76%, 100% { transform: translateX(-300%); }
+}
+
+/* Navigation Dots */
+.slider-nav {
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+
+.slider-nav label {
+width: 12px;
+height: 12px;
+background: #ccc;
+margin: 0 5px;
+border-radius: 50%;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+/* Active Dot Animation */
+@keyframes dot-animation {
+0%, 33.33% { background: #8c6845; }
+34%, 66.66% { background: #ccc; }
+}
+
+.slider-nav label {
+animation: dot-animation 40s infinite;
+}
+
+.slider-nav label:nth-child(1) {
+animation-delay: 0s;
+}
+
+.slider-nav label:nth-child(2) {
+animation-delay: 10s;
+}
+
+.slider-nav label:nth-child(3) {
+animation-delay: 20s;
+}
+
+
+.slider-nav label:nth-child(4) {
+animation-delay: 30s;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+.slides {
+width: 100%; /* Ensure the slide container adapts on mobile */
+}
+.testimonial-slide {
+flex: 0 0 100%; /* Make each slide 100% wide */
+padding: 15px;
+}
+.testimonial-photo img {
+width: 80px;
+height: 80px;
+}
+}

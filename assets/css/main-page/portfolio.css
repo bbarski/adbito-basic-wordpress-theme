@@ -1,0 +1,70 @@
+.portfolio-section {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 1 1 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    transition: transform 1s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.portfolio-item:hover img,
+.portfolio-item img:active {
+    transform: scale(1.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1920px) {
+    .portfolio-item {
+        flex: 1 1 calc(25% - 16px);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+    .portfolio-item {
+        flex: 1 1 calc(33.33% - 16px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .portfolio-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .portfolio-item {
+        flex: 1 1 100%;
+    }
+}

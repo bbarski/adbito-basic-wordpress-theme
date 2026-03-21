@@ -1,0 +1,47 @@
+.services-container {
+    width: 100%;
+}
+
+.services-content {
+    display: block;
+}
+
+.services-image {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 45%;
+}
+
+.services-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.services-text {
+    font-size: 1.1rem;
+}
+
+.image-right .services-image {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .services-image {
+        float: none;
+        margin: 0 auto 20px auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .services-text {
+        width: 100%;
+    }
+}

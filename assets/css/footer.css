@@ -1,0 +1,63 @@
+/* Stopka */
+footer {
+    background-color: var(--color-bg-footer);
+    color: var(--color-text-footer);
+    text-align: center;
+    margin-top: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-creator {
+    color: var(--color-footer-creator-ahref);
+	text-decoration: none; /* Usunięcie podkreślenia */
+}
+
+.footer-creator:hover {
+	    color: var(--color-footer-creator-ahref-hover);
+}
+
+.footer-blog-info-name {
+    color: var(--color-footer-bloginfo-ahref);
+    text-decoration: none; /* Usunięcie podkreślenia */
+}
+
+.footer-blog-info-name:hover {
+    color: var(--color-footer-bloginfo-ahref-hover);
+}
+
+/* Responsywność: tablet */
+@media (max-width: 768px) {
+    footer .container p {
+        font-size: 1.1em; /* Zwiększenie rozmiaru czcionki dla tabletów */
+    }
+    .footer .cols-2 .widget-column-1 {
+        width: 80%; /* Szerokość 80% na tabletach */
+    }
+}
+
+/* Responsywność: mobilne urządzenia */
+@media (max-width: 480px) {
+    footer .container p {
+        font-size: 1em; /* Zmniejszenie rozmiaru czcionki dla urządzeń mobilnych */
+    }
+    .footer .cols-2 .widget-column-1 {
+        width: 92%; /* Pełna szerokość na urządzeniach mobilnych */
+    }
+}
+
+/* Ikona w stopce */
+footer .footer-icon {
+    font-size: 1.5em;
+    color: #d1d1b2;
+}
+
+footer .footer-icon:hover {
+    color: goldenrod;
+}

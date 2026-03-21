@@ -1,0 +1,33 @@
+.share-icons-wrapper {
+    position: fixed;
+    bottom: 0;
+	left: 0;
+    width: 100%;
+}
+
+.share-icons-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	width:100%;
+    gap: 10px;
+	/* background-color: #F5F5F5; */
+}
+
+.share-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.share-icon {
+    font-size: 20px;
+    text-decoration: none;
+	color: goldenrod;
+}
+
+.share-icon:hover {
+    color: #0073aa;
+}
