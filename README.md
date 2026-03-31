@@ -1,4 +1,4 @@
-# Adbito Child Starter Theme
+# Adbito Starter Theme
 
 🇬🇧 *English version below*  
 🇵🇱 *Polska wersja poniżej*
