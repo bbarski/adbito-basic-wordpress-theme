@@ -1,4 +1,4 @@
-# Adbito Starter Theme
+# Adbito Basic Theme
 
 🇬🇧 *English version below*  
 🇵🇱 *Polska wersja poniżej*
