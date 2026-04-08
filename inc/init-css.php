@@ -17,6 +17,7 @@ function load_and_minify_css() {
 		get_stylesheet_directory_uri() . '/assets/css/header.css',
         get_stylesheet_directory_uri() . '/assets/css/main-page/front-page.css',
 		get_stylesheet_directory_uri() . '/assets/css/main-page/hero.css',
+		get_stylesheet_directory_uri() . '/assets/css/main-page/products.css',
         get_stylesheet_directory_uri() . '/assets/css/main-page/benefits.css',
         get_stylesheet_directory_uri() . '/assets/css/main-page/gallery.css',
         get_stylesheet_directory_uri() . '/assets/css/main-page/about.css',

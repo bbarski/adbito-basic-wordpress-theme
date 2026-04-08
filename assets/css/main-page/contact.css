@@ -22,20 +22,19 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-
-
-.nested-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .contact-us-box {
     display: flex;
-    border: 1px solid #ddd; /* Opcjonalnie: obramowanie */
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    border: 1px solid #ddd;
+    max-width: 250px;
+    width: 100%;
 }
 
 .box-left {
@@ -52,16 +51,9 @@
     margin-bottom: 5px;
 }
 
-
-/*
-.benefits-section .benefit:hover {
-    background-color: #7b8f6a;
-    color: #fff;
-}
-*/
-
 @media (max-width: 768px) {
-    .benefit {
-        flex: 1 1 100%;
+    .main-container {
+        flex-direction: column;
+        align-items: center;
     }
 }

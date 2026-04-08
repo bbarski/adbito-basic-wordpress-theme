@@ -63,13 +63,7 @@ $data = get_data_for_template('testimonials');
 </div>	
 	
 </div>
-<!-- Navigation Dots -->
-<div class="slider-nav">
-<label for="slide<?php echo $i; ?>"></label>
-<label for="slide<?php echo $i; ?>"></label>
-<label for="slide<?php echo $i; ?>"></label>
-<label for="slide<?php echo $i; ?>"></label>
-</div>
+
 </div>
 </div>
 </section>

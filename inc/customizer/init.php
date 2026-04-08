@@ -1,17 +1,5 @@
 <?php
 
-// $customizer_enabled_sections = [
-//     'header'       => true,
-//     'hero'         => false,
-//     'benefits'     => true,
-//     'gallery'      => true,
-//     'about'        => true,
-//     'services'     => true,
-//     'testimonials' => true,
-//     'colors'       => true,
-//     'general'      => true,
-// ];
-
 $customizer_sections_config = [
 	
 		'mytheme_social_sharing_section' => [
@@ -41,7 +29,7 @@ $customizer_sections_config = [
             'mytheme_custom_logo'    => ['default_logo_url', 'Custom Header Logo', 'image'],
         ],
     ],
-    'mytheme_hero_section' => [
+	    'mytheme_hero_section' => [
         'title'    => 'Hero Section',
         'priority' => 21,
         'settings' => [
@@ -54,9 +42,29 @@ $customizer_sections_config = [
 			'hero_image_border_radius'	=> ['8', 'Hero Image Border Radius', 'number'],
         ],
     ],
+	
+    'mytheme_products_section' => [
+        'title'    => 'Products Section',
+        'priority' => 22,
+        'settings' => [
+			'products_section_visibility' => ['enable', 'Products section visibility', 'checkbox'],
+			'products_section_title' 	 => ['Products section title', 'Products Custom Title Text', 'text'],
+            'products_p_1'    => ['Your paragraph text goes here.', 'Product 1 Custom Paragraph Text', 'textarea'],
+            'products_cta_1_text'    => ['Your Product 1 CTA text goes here.', 'Product 1 Custom CTA Button Text', 'text'],
+            'products_cta_1_url'     => ['', 'Product 1 Custom CTA URL', 'url'],
+            'products_image_1'       => ['', 'Product 1 Image', 'image'],
+			'product_image_1_position' => ['left', 'Image Position (Left or Right)', 'radio', ['left'  => 'Left', 'right' => 'Right',]],
+			'products_image_1_border_radius'	=> ['8', 'Product 1 Image Border Radius', 'number'],
+			'products_p_2'    => ['Your paragraph text goes here.', 'Product 2 Custom Paragraph Text', 'textarea'],
+            'products_cta_2_text'    => ['Your Product 2 CTA text goes here.', 'Product 1 Custom CTA Button Text', 'text'],
+            'products_cta_2_url'     => ['', 'Product 2 Custom CTA URL', 'url'],
+            'products_image_2'       => ['', 'Product 2 Image', 'image'],
+			'products_image_3_border_radius'	=> ['8', 'Product 2 Image Border Radius', 'number'],
+        ],
+    ],
 	'mytheme_benefits_section' => [
         'title'    => 'Benefits Section',
-		'priority' => 22,
+		'priority' => 23,
         'settings' => [
         //'mytheme_benefits_count' => [3, 'Number of Benefits', 'number'],
         	'benefits_section_visibility' => ['enable', 'Benefits section visibility', 'checkbox'],
@@ -71,7 +79,7 @@ $customizer_sections_config = [
     ],
 		'mytheme_gallery_section' => [
         'title'    => 'Front Page Gallery Section',
-		'priority' => 23,
+		'priority' => 24,
         'settings' => [
 			'gallery_section_visibility' => ['enable', 'Gallery section visibility', 'checkbox'],
         	'gallery_section_title' 	 => ['Front Page Gallery section title', 'Front Page Gallery Custom Title Text', 'text'],
@@ -89,7 +97,7 @@ $customizer_sections_config = [
     ],
 		'mytheme_about_section' => [
         'title'    => 'About Us Section',
-		'priority' => 24,
+		'priority' => 25,
         'settings' => [
 			'about_section_visibility' => ['enable', 'About section visibility', 'checkbox'],
         	'about_section_title' 	 	 => ['About Us section title', 'About Us Custom Title Text', 'text'],
@@ -100,7 +108,7 @@ $customizer_sections_config = [
     ],
 		'mytheme_services_section' => [
         'title'    => 'Services Section',
-		'priority' => 25,
+		'priority' => 26,
         'settings' => [
 			'services_section_visibility' => ['enable', 'Services section visibility', 'checkbox'],
         	'services_section_title' 	 	 => ['Services section title', 'Services Custom Title Text', 'text'],
@@ -111,7 +119,7 @@ $customizer_sections_config = [
     ],
 		'mytheme_testimonials_section' => [
         'title'    => 'Testimonials Section',
-		'priority' => 26,
+		'priority' => 27,
         'settings' => [
 			'testimonials_section_visibility' => ['enable', 'Testimoniaals section visibility', 'checkbox'],
         	'testimonials_section_title' 	 => ['Testimonials section title', 'Testimonials Custom Title Text', 'text'],
@@ -131,14 +139,17 @@ $customizer_sections_config = [
     ],
 		'mytheme_contact_section' => [
         'title'    => 'Contact Section',
-		'priority' => 27,
+		'priority' => 28,
         'settings' => [
 			'contact_section_visibility' => ['enable', 'Contact section visibility', 'checkbox'],
+			'contact_container_content'  => ['cont_addr', 'Contact Section Content (Contact and Address or Just Contact)', 'radio', ['cont_addr'  => 'Contact & Address', 'cont' => 'Contact',]],
         	'contact_section_title' 	 => ['Contact section title', 'Contact Section Custom Title Text', 'text'],
 			'contact_section_adress_line1' 	 => ['Contact section adress line 1', 'Contact section adress line 1 Text', 'text'],
 			'contact_section_adress_line2' 	 => ['Contact section adress line 2', 'Contact section adress line 2 Text', 'text'],
 			'contact_section_phn' 		 => ['123456789','Contact Section Phone Number','text'],
+			'contact_section_phn_url' 		 => ['','Contact Section Phone Number URL','text'],
 			'contact_section_mail' 		 => ['you@youmail.com','Contact Section Email Adress','text'],
+			'contact_section_map_visibility' => ['enable', 'Contact section map visibility', 'checkbox'],
 			'leaflet_map_shortcodes' 	 => ['[leaflet-map lat=52.34492251711576 lng=21.24164164066315 zoom=18][leaflet-marker lat=52.34475210731323 lng=21.241620182991028]', 'Leaflet Map Shortcodes', 'textarea'],
 		]
     ]

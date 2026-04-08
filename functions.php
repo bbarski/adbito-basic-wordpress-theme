@@ -1,11 +1,7 @@
 <?php
-// This is functions.php for the child theme for Starter Theme.
 
 define('CREATOR_LINK', 'https://adbito.pl');
 define('CREATOR_NAME', 'ADBITO.PL');
-define('CONTACT_PHN_LINK', 'tel:+48511540671');
-define('CONTACT_PHN_DISPLAY', '+48 511 540 671');
-
 
 add_action('wp_enqueue_scripts', 'child_starter_theme_enqueue_scripts');
 function child_starter_theme_enqueue_scripts() {
@@ -76,8 +72,8 @@ function display_section_if_enabled($section_mod, $template_part) {
     }
 }
 
-add_action('wp_head', 'hero_image_border_raadius');
-function hero_image_border_raadius() {
+add_action('wp_head', 'hero_image_border_radius');
+function hero_image_border_radius() {
     $border_radius = get_theme_mod('hero_image_border_radius', 8);
     echo '<style>.hero-image img { border-radius: ' . esc_attr($border_radius) . 'px; }</style>';
 }

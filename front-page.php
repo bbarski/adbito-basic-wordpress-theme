@@ -4,6 +4,7 @@
     <?php
     if (is_front_page() && !is_home()) :
 		display_section_if_enabled('hero_section_visibility', 'components/hero');
+	    display_section_if_enabled('products_section_visibility', 'components/products');
 	    display_section_if_enabled('benefits_section_visibility', 'components/benefits');
 		display_section_if_enabled('gallery_section_visibility', 'components/gallery');
 	    display_section_if_enabled('about_section_visibility', 'components/about');

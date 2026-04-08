@@ -1,6 +1,4 @@
-<?php 
-$header_data = get_data_for_template('header');
-?>
+<?php $header_data = get_data_for_template('header'); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

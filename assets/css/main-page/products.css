@@ -1,0 +1,137 @@
+.products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.products-container {
+    width: 100%;
+    max-width: var(--width-max-container);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.product-content {
+    display: flex;
+    flex-wrap: wrap;
+	margin: 20px auto;
+    padding: 20px 20px;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Equal width and height for product-text and product-image on desktop */
+.product-text, .product-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 400px;
+    height: 400px;
+    line-break: loose;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-right .product-image {
+	order: 1;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/*.product-image img {
+    border-radius: 8px;
+}*/
+
+.product-text {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-text-content {
+    width: 100%;
+}
+
+.hero-text h1,
+.hero-text h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.product-cta-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.5s;
+    background-color: #ff7f27;
+    color: #fff;
+    margin-top: 15px;
+    display: inline-block;
+	    line-break: loose;
+
+}
+
+.product-cta-button:hover {
+    background-color: #0074D9;
+    color: #1f1f1f;
+}
+
+.scroll-down-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.scroll-down-indicator span {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.scroll-down-indicator:hover span {
+    transform: translateY(5px);
+}
+
+/* Mobile Responsiveness - below 1230px width */
+@media (max-width: 768px) {
+    .product-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-text, .product-image {
+		align-items: center;
+		text-align: center;
+		line-break: loose;
+        flex: 1 1 100%; /* Full width on mobile */
+        max-width: 100%;
+        margin-bottom: 15px; /* Add space between the image and text */
+    }
+   
+}
+

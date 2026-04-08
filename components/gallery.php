@@ -1,6 +1,4 @@
-<?php 
-$data = get_data_for_template('gallery');
-?>
+<?php $data = get_data_for_template('gallery'); ?>
 <section class="gallery-section">
 	<div class="galery-container">
 		<h2 class="section-title">
@@ -17,6 +15,5 @@ $data = get_data_for_template('gallery');
             }			
 ?>
 		</div>
-		<button></button>
 	</div>
 </section>

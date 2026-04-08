@@ -1,4 +1,3 @@
-
 <nav class="main-nav">
 	<input type="checkbox" id="menu-toggle" class="menu-toggle">
 	<label for="menu-toggle" class="menu-icon">&#9776;</label>
