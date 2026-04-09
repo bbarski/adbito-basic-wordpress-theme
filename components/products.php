@@ -4,7 +4,7 @@
     <div class="products-container">
 	<h2 class="section-title"><?php echo esc_html($data['products_section_title']); ?></h2>
 		<div class="product-content">
-		<div class="product-image <?php echo esc_html($data['product_image_1_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
+		<div id="product-image-1" class="product-image <?php echo esc_html($data['product_image_1_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
 			<img src="<?php echo esc_url($data['products_image_1']); ?>" alt="" />
         </div>
             <div class="product-text">
@@ -15,7 +15,7 @@
             </div>
         </div>
 		<div class="product-content">
-		<div class="product-image <?php echo esc_html($data['product_image_2_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
+		<div id="product-image-2" class="product-image <?php echo esc_html($data['product_image_2_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
                 <img src="<?php echo esc_url($data['products_image_2']); ?>" alt="" />
         </div>
             <div class="product-text">
@@ -27,7 +27,7 @@
         </div>
 		
 				<div class="product-content">
-		<div class="product-image <?php echo esc_html($data['product_image_3_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
+		<div id="product-image-3" class="product-image <?php echo esc_html($data['product_image_3_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
 			<img src="<?php echo esc_url($data['products_image_3']); ?>" alt="" />
         </div>
             <div class="product-text">
@@ -38,7 +38,7 @@
             </div>
         </div>
 		<div class="product-content">
-		<div class="product-image <?php echo esc_html($data['product_image_4_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
+		<div id="product-image-4" class="product-image <?php echo esc_html($data['product_image_4_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
                 <img src="<?php echo esc_url($data['products_image_4']); ?>" alt="" />
         </div>
             <div class="product-text">
@@ -50,7 +50,7 @@
         </div>
 		
 				<div class="product-content">
-		<div class="product-image <?php echo esc_html($data['product_image_5_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
+		<div id="product-image-5" class="product-image <?php echo esc_html($data['product_image_5_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
 			<img src="<?php echo esc_url($data['products_image_5']); ?>" alt="" />
         </div>
             <div class="product-text">
@@ -61,7 +61,7 @@
             </div>
         </div>
 		<div class="product-content">
-		<div class="product-image <?php echo esc_html($data['product_image_6_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
+		<div id="product-image-6" class="product-image <?php echo esc_html($data['product_image_6_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
                 <img src="<?php echo esc_url($data['products_image_6']); ?>" alt="" />
         </div>
             <div class="product-text">

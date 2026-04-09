@@ -78,6 +78,27 @@ function hero_image_border_radius() {
     echo '<style>.hero-image img { border-radius: ' . esc_attr($border_radius) . 'px; }</style>';
 }
 
+add_action('wp_head', 'products_images_border_radius');
+function products_images_border_radius() {
+    $border_radius_img1 = get_theme_mod('products_image_1_border_radius', 8);
+    echo '<style>#product-image-1 img { border-radius: ' . esc_attr($border_radius_img1) . 'px; }</style>';
+	
+	$border_radius_img2 = get_theme_mod('products_image_2_border_radius', 8);
+    echo '<style>#product-image-2 img { border-radius: ' . esc_attr($border_radius_img2) . 'px; }</style>';
+	
+	$border_radius_img3 = get_theme_mod('products_image_3_border_radius', 8);
+    echo '<style>#product-image-3 img { border-radius: ' . esc_attr($border_radius_img3) . 'px; }</style>';
+	
+	$border_radius_img4 = get_theme_mod('products_image_4_border_radius', 8);
+    echo '<style>#product-image-4 img { border-radius: ' . esc_attr($border_radius_img4) . 'px; }</style>';
+	
+	$border_radius_img5 = get_theme_mod('products_image_5_border_radius', 8);
+    echo '<style>#product-image-5 img { border-radius: ' . esc_attr($border_radius_img5) . 'px; }</style>';
+	
+	$border_radius_img6 = get_theme_mod('products_image_6_border_radius', 8);
+    echo '<style>#product-image-6 img { border-radius: ' . esc_attr($border_radius_img6) . 'px; }</style>';
+}
+
 require_once get_stylesheet_directory() . '/inc/editor/meta-desc-box.php';
 require_once get_stylesheet_directory() . '/inc/init-css.php';
 require_once get_stylesheet_directory() . '/inc/mock-img.php';
