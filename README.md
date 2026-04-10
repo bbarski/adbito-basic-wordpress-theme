@@ -17,7 +17,7 @@ Lekki i konfigurowalny motyw. Zaprojektowany z myślą o wydajności, prostocie 
 ### Instalacja
 
 ```bash
-git clone [https://github.com/bbarski/adbito-child-starter-theme.git](https://github.com/bbarski/adbito-basic-wordpress-theme.git) wp-content/themes/adbito-basic-wordpress-theme
+git clone https://github.com/bbarski/adbito-basic-wordpress-theme.git wp-content/themes/adbito-basic-wordpress-theme
 ```
 
 
