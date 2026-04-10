@@ -24,7 +24,7 @@ git clone https://github.com/bbarski/adbito-basic-wordpress-theme.git wp-content
 Następnie aktywuj motyw w panelu WordPress lub przez WP-CLI:
 
 ```bash
-wp theme activate adbito-child-starter-theme
+wp theme activate adbito-basic-wordpress-theme
 ```
 
 ### Struktura
