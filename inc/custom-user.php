@@ -7,7 +7,7 @@ function add_customizer_post_author_role() {
             'read' => true,
             'edit_posts' => true,
             'publish_posts' => true,
-            'upload_files' => true, // Dodano uprawnienie do wgrywania plików
+            'upload_files' => true,
             'customize' => true,
             'switch_themes' => true,
             'edit_theme_options' => true,
@@ -22,7 +22,7 @@ function add_customizer_post_author_capabilities() {
         $role_object->add_cap('read');
         $role_object->add_cap('edit_posts');
         $role_object->add_cap('publish_posts');
-        $role_object->add_cap('upload_files'); // Dodano uprawnienie do wgrywania plików
+        $role_object->add_cap('upload_files');
         $role_object->add_cap('customize');
         $role_object->add_cap('switch_themes');
         $role_object->add_cap('edit_theme_options');
