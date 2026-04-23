@@ -84,7 +84,7 @@
     text-decoration: none;
     font-weight: bold;
     transition: background 0.5s;
-    background-color: #ff7f27;
+    background-color: var(--color-hero-cta-button);
     color: #fff;
     margin-top: 15px;
     display: inline-block;
@@ -93,7 +93,7 @@
 }
 
 .cta-button:hover {
-    background-color: #0074D9;
+    background-color: var(--color-hero-cta-button-hover);
     color: #1f1f1f;
 }
 

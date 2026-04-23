@@ -86,6 +86,10 @@ Text Domain:  adbito-basic
 
 [site-theme="dark"] {
 	--color-bg-body: #161616;
+	--color-hero-cta-button: #FF7F27;
+	--color-hero-cta-button-hover: #0074D9;
+	--color-products-cta-buttons: #FF7F27;
+	--color-products-cta-buttons-hover: #0074D9;
 	--color-text-body: #f4f4f4;
 	--color-bg-burger:;
 	--color-fg-burger:;
@@ -102,6 +106,26 @@ Text Domain:  adbito-basic
 
 [site-theme="light"] {
 	--color-bg-body: white;
+	--color-text-body: black;
+	--color-bg-burger:;
+	--color-fg-burger:;
+	--color-bg-header:;
+	--color-text-header:;
+	--color-bg-footer:;
+	--color-text-footer:;
+	--color-global-ahref:;
+	--color-footer-creator-ahref:goldenrod;
+	--color-footer-creator-ahref-hover:#ffc107;
+	--color-footer-bloginfo-ahref:;
+	--color-footer-bloginfo-ahref-hover:;
+}
+
+[site-theme="evenement"] {
+	--color-bg-body: #FFF8F8;
+	--color-hero-cta-button: #C673B3;
+	--color-hero-cta-button-hover: #B173C7;
+	--color-products-cta-buttons: #C673B3;
+	--color-products-cta-buttons-hover: #B173C7;
 	--color-text-body: black;
 	--color-bg-burger:;
 	--color-fg-burger:;

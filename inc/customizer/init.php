@@ -30,11 +30,14 @@ $customizer_sections_config = [
         'priority' => 19,
         'settings' => [
 			'theme_colors'   		=> ['outdoor-night', 'Theme colors', 'radio',
-										 ['outdoor-night'  => 'outdoor-night',
+										 [
+										  'evenement' => 'evenement',  
+										  'outdoor-night' => 'outdoor-night',
 										  'outdoor' => 'outdoor',
 										  'dark' => 'dark',
 										  'light' => 'light',
-										  'retro-games' => 'retro-games',]
+										  'retro-games' => 'retro-games',
+										 ]
 									   ],
         ],
     ],
