@@ -4,7 +4,7 @@ Theme URI:    https://adbito.pl
 Description:  Basic Wordpress Theme
 Author:       adBito
 Author URI:   https://adbito.pl
-Version:      0.3.2
+Version:      0.3.3
 Text Domain:  adbito-basic
 */
 
@@ -82,6 +82,26 @@ Text Domain:  adbito-basic
 	--color-footer-creator-ahref-hover:#ffc107;
 	--color-footer-bloginfo-ahref:;
 	--color-footer-bloginfo-ahref-hover:;
+}
+
+[site-theme="solid"] {
+	--color-bg-body: #0a1628;
+	--color-hero-cta-button: #4a6baf;
+	--color-hero-cta-button-hover: #2a4886;
+	--color-products-cta-buttons: #4a6baf;
+	--color-products-cta-buttons-hover: #2a4886;
+	--color-text-body: #e0e0e0;
+	--color-bg-burger: #1a2a3e;
+	--color-fg-burger: #e0e0e0;
+	--color-bg-header: #1a2a3e;
+	--color-text-header: #e0e0e0;
+	--color-bg-footer: #1a2a3e;
+	--color-text-footer: #e0e0e0;
+	--color-global-ahref: #c09f77;
+	--color-footer-creator-ahref: #c09f77;
+	--color-footer-creator-ahref-hover: #d4b896;
+	--color-footer-bloginfo-ahref: #6a8ea7;
+	--color-footer-bloginfo-ahref-hover: #4a6baf;
 }
 
 [site-theme="dark"] {

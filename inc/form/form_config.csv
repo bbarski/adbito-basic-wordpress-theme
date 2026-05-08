@@ -1,0 +1,8 @@
+field_name,field_type,label,required,options
+name,text,Full Name,true,
+email,email,Email Address,true,
+gender,radio,Gender,false,Male,Female,Other
+country,select,Country,false,USA,Canada,UK,Australia
+message,textarea,Message,false,
+subscribe,checkbox,Subscribe to newsletter,false,
+
