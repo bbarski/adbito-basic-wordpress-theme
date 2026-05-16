@@ -102,6 +102,11 @@ Text Domain:  adbito-basic
 	--color-footer-creator-ahref-hover: #d4b896;
 	--color-footer-bloginfo-ahref: #6a8ea7;
 	--color-footer-bloginfo-ahref-hover: #4a6baf;
+	--color-bg-body-blog:linear-gradient(to bottom, #0a1628, #1a2a3e);
+	--color-bg-body-post-blog:linear-gradient(to bottom, #0a1628, #1a2a3e);
+	--color-bg-body-post-single-blog:#1a2a3e;
+	--color-text-post-single-blog:#a3a3a3;
+	--color-title-post-single-blog:#e3e1d4;
 }
 
 [site-theme="dark"] {
@@ -158,6 +163,11 @@ Text Domain:  adbito-basic
 	--color-footer-creator-ahref-hover:#ffc107;
 	--color-footer-bloginfo-ahref:;
 	--color-footer-bloginfo-ahref-hover:;
+	--color-bg-body-blog:linear-gradient(to bottom, #FFF8F8, #FFE4E1);
+	--color-bg-body-post-blog:linear-gradient(to bottom, #FFF8F8, #FFE4E1);
+	--color-bg-body-post-single-blog:#FFE4E1;
+	--color-text-post-single-blog:#5a4a42;
+	--color-title-post-single-blog:#5a4a42;
 }
 
 
